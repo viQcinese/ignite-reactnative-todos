@@ -91,10 +91,16 @@ export default function TaskItem(props: TaskItemProps) {
         <TouchableOpacity
           testID={`trash-${index}`}
           style={{ paddingHorizontal: 12 }}
+<<<<<<< HEAD
           disabled={isEditing}
           onPress={() => removeTask(item.id)}
         >
           <Image source={trashIcon} style={{ opacity: isEditing ? 0.2 : 1 }} />
+=======
+          onPress={() => removeTask(item.id)}
+        >
+          <Image source={trashIcon} />
+>>>>>>> 95838cf635ba29b5ab60d98ff8d7dc947ec4abc3
         </TouchableOpacity>
       </View>
     </React.Fragment>
